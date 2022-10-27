@@ -88,7 +88,7 @@ const Sidebar = () => {
             )}
           </MenuItem>
 
-          {/* {!isCollapsed && (
+          {!isCollapsed && (
             <Box mb="25px">
               <Box display="flex" justifyContent="center" alignItems="center">
                 <img
@@ -217,7 +217,7 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-          </Box> */}
+          </Box>
         </Menu>
       </ProSidebarProvider>
     </Box>
