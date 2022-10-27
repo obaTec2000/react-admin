@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { ProSidebarProvider, Menu, MenuItem } from "react-pro-sidebar";
-import "react-pro-sidebar/dist/css/styles.css";
 import { Box, IconButton, Typography, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 import { tokens } from "../../../theme";
@@ -47,14 +46,14 @@ const Sidebar = () => {
         "& .pro-sidebar-inner": {
           background: `${colors.primary[400]} !important`,
         },
-        "& .pro-inner-wrapper": {
+        "& .pro-icon-wrapper": {
           backgroundColor: "transparent !important",
         },
         "& .pro-inner-item": {
           padding: "5px 35px 5px 20px !important",
         },
         "& .pro-inner-item:hover": {
-          color: "#868dfb !important",
+          color: "#db4f4a !important",
         },
         "& .pro-menu-item.active": {
           color: "#6870fa !important",
@@ -89,16 +88,14 @@ const Sidebar = () => {
             )}
           </MenuItem>
 
-          {/* USER */}
-
-          {!isCollapsed && (
+          {/* {!isCollapsed && (
             <Box mb="25px">
               <Box display="flex" justifyContent="center" alignItems="center">
                 <img
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src={`../../assets/001.png`}
+                  src={`../../assets/10.png`}
                   style={{ cursor: "pointer", borderRadius: "50%" }}
                 />
               </Box>
@@ -118,7 +115,6 @@ const Sidebar = () => {
             </Box>
           )}
 
-          {/*MENU ITEMS */}
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
             <Item
               title="Dashboard"
@@ -221,7 +217,7 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-          </Box>
+          </Box> */}
         </Menu>
       </ProSidebarProvider>
     </Box>
