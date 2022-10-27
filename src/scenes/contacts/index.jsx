@@ -7,7 +7,7 @@ import SecurityOutlinedIcon from "@mui/icons-material/SecurityOutlined";
 import Header from "../../../components/Header";
 import { mockDataTeam } from "../../../data/mockData";
 
-const Team = () => {
+const Class = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const columns = [
@@ -106,4 +106,4 @@ const Team = () => {
   );
 };
 
-export default Team;
+export default Class;
