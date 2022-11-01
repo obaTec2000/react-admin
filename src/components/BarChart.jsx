@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 function BarChart() {
-  return (
-    <div>
-      BarChart
-    </div>
-  );
+  return <div>BarChart</div>;
 }
 
 export default BarChart;
