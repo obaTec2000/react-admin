@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { ProSidebarProvider } from "react-pro-sidebar";
 import { Routes, Route } from "react-router-dom";
-import Topbar from "./scenes/dashboard/global/Topbar";
-import Sidebar from "./scenes/dashboard/global/Sidebar";
+import Topbar from "./scenes/global/Topbar";
+import Sidebar from "./scenes/global/Sidebar";
 import Dashboard from "./scenes/dashboard";
-import Team from "./scenes/dashboard/team";
+import Team from "./scenes/team";
 import Invoices from "./scenes/invoices";
 import Contacts from "./scenes/contacts";
 import Bar from "./scenes/bar";
@@ -25,7 +24,6 @@ function App() {
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <ProSidebarProvider></ProSidebarProvider>
         <div className="app">
           <Sidebar isSidebar={isSidebar} />
           <main className="content">
